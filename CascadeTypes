@@ -1,0 +1,25 @@
+Hibernate provides various cascade types that dictate how operations on a parent entity affect the associated child entities.
+
+1) CascadeType.ALL
+
+Applies all cascading operations: PERSIST, MERGE, REMOVE, REFRESH, and DETACH.
+Use when you want the child entity to completely follow the lifecycle of the parent.
+CascadeType.PERSIST
+
+2) CascadeType.PERSIST
+Saves (persists) the child entity when the parent entity is persisted.
+CascadeType.MERGE
+
+3) CascadeType.MERGE
+Updates the child entity when the parent entity is updated.
+
+4) CascadeType.REMOVE
+Deletes the child entity when the parent entity is deleted.
+CascadeType.REFRESH
+
+5) CascadeType.REFRESH
+Updates the child entity's state to match the database when the parent entity is refreshed.
+CascadeType.DETACH
+
+6) CascadeType.DETACH
+Detaches the child entity when the parent entity is detached from the persistence context.
